@@ -1,4 +1,17 @@
-body{
-    background-color: aqua;
-    padding: 100px 100px;
+@import "./navigation.scss";
+@import "./news.scss";
+@import "./menu.scss";
+@import "./reservations.scss";
+
+
+body {
+    background-color: grey!important;
+
+    .navbar-brand{
+        color: #fff;
+        font-family: 'Fasthand', cursive;
+        font-size: 26px;
+        letter-spacing: 8px;
+        padding-left: 30px;
+    }
 }
