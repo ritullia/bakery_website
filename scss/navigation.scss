@@ -1,11 +1,24 @@
-.bg-light{
-    background-color: rgb(206, 206, 206)!important;
-    opacity: 0.8;
-   
+#container {
+    background-image: url(../img/bred.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    
+    .bg-light {
+      background-color: #56534c25 !important;
+      height: 70px;
 
-    .nav-link{
+      .nav-symbol {
         color: #fff;
-        font-family: 'Alegreya', serif;
+        display: flex;
+        flex-direction: row;
+        margin-top: 28px;
+      }
+      .nav-link {
+        color: #fff;
+        font-family: "Alegreya", serif;
+        padding: 32px;
+      }
     }
-   
+  
 }

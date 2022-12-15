@@ -1,1 +1,1 @@
-.bg-light{background-color:#cecece !important;opacity:0.8}.bg-light .nav-link{color:#fff;font-family:'Alegreya', serif}
+#container{background-image:url(../img/bred.png);background-repeat:no-repeat;background-size:cover;height:500px}#container .bg-light{background-color:#56534c25 !important;height:70px}#container .bg-light .nav-symbol{color:#fff;display:flex;flex-direction:row;margin-top:28px}#container .bg-light .nav-link{color:#fff;font-family:"Alegreya", serif;padding:32px}
