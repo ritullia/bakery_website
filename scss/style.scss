@@ -3,59 +3,148 @@
 @import "./menu.scss";
 @import "./reservations.scss";
 
-
 body {
-    #container{
-        .navbar-brand{
-            color: #fff;
-            font-family: 'Fasthand', cursive;
-            font-size: 26px;
-            letter-spacing: 8px;
-            padding-left: 30px;
-        }
-
-        #pastry-text {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 80%;
-            align-items: center;
-            gap: 50px;
-            margin-top: 140px;
-            margin-left: 10%;
-
-            h1{
-                font-size: 92px;
-                font-weight: 700;
-                color: #fff;
-                font-family: "Alegreya", serif;
-                letter-spacing: 6.9px;
-            }
-
-           
-
-            p{
-                font-size: 24px;
-                color: #fff;
-                width: 40%;
-                text-align: center;
-                font-family: 'Open Sans', sans-serif;
-            }
-
-            .btn{
-                background-color: #56534c5b;
-                border: rgb(104, 104, 104) 2px dashed;
-                color: #fff;
-                font-size: 24px;
-                letter-spacing: 4.2px;
-                font-family: 'Open Sans', sans-serif;
-            }
-
-
-        }
-
+  #container {
+    .navbar-brand {
+      color: #fff;
+      font-family: "Fasthand", cursive;
+      font-size: 26px;
+      letter-spacing: 8px;
+      padding-left: 30px;
     }
-    
 
-   
+    #pastry-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 80%;
+      height: 497px;
+      align-items: center;
+      gap: 50px;
+      margin-top: 140px;
+      margin-left: 10%;
+      background: radial-gradient(
+        circle 430px at center,
+        #564f4c -10%,
+        rgba(86, 83, 76, 0) 60%
+      );
+
+      h1 {
+        font-size: 92px;
+        font-weight: 700;
+        color: #fff;
+        font-family: "Alegreya", serif;
+        letter-spacing: 6.9px;
+        text-shadow: 0 0 3px #564f4c;
+      }
+
+      p {
+        font-size: 24px;
+        color: #fff;
+        width: 60%;
+        text-align: center;
+        font-family: "Open Sans", sans-serif;
+        letter-spacing: 2.4px;
+        line-height: 36px;
+      }
+
+      .btn {
+        background-color: #56534c5b;
+        border: rgb(158, 158, 158) 3px dashed;
+        color: #fff;
+        font-size: 24px;
+        letter-spacing: 4.2px;
+        font-family: "Open Sans", sans-serif;
+      }
+    }
+  }
+  #round-bread {
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .smart-object {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: rgb(255, 255, 255);
+      position: relative;
+
+      img {
+        top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+     position: absolute;
+        
+      }
+    }
+  }
+
+  #art-tastes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: antiquewhite;
+    height: 760px;
+    padding: 40px;
+    gap: 20px;
+  }
+
+  #art {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    background-color: aquamarine;
+    width: 45%;
+    padding: 0 40px 0 40px;
+
+    .art-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 30px;
+      h1 {
+        font-size: 48px;
+        font-family: "Alegreya", serif;
+        font-weight: 700;
+        color: #56534c;
+        letter-spacing: 1.2px;
+        padding-bottom: 15px;
+      }
+      .we-create {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 900;
+        line-height: normal;
+        color: #a47d5e;
+        padding-bottom: 60px;
+      }
+
+      p {
+        font-family: "Open Sans", sans-serif;
+        color: #56534c;
+        font-size: 14px;
+      }
+    }
+  }
+  .taste {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: brown;
+    width: 45%;
+    div {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      img {
+        width: 265px;
+        height: 265;
+        border: 5px solid #fff;
+      }
+    }
+  }
 }
