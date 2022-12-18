@@ -89,13 +89,13 @@ body {
     background-color: antiquewhite;
     height: 760px;
     padding: 40px 100px;
-    gap: 20px;
+    gap: 10px;
     #art {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       text-align: center;
-      background-color: aquamarine;
+      // background-color: aquamarine;
       width: 50%;
       padding: 0 80px 0 80px;
 
@@ -138,19 +138,58 @@ body {
       }
     }
     .taste {
-      display: flex;
-      justify-content: space-around;
-      flex-direction: row;
-      background-color: brown;
+      // background-color: brown;
       width: 50%;
       div {
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: repeat(2, 250px);
+        gap: 10px;
+
+        div :nth-child(1) {
+          width: 100%;
+          height: 240px;
+          object-fit: cover;
+          border: 6px solid #fff;
+        }
+        div :nth-child(2) {
+          width: 100%;
+          height: 240px;
+          object-fit: cover;
+        }
+        div :nth-child(3) {
+          width: 100%;
+          height: 240px;
+          object-fit: cover;
+        }
+
+      }
+      .vector-obj {
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        
+        h1{
+          font-size: 30px;
+          font-weight: 400;
+          color: #c9b176;
+          text-transform: uppercase;
+          top: -420%;
+          left: 257%;
+          transform: translate(-50%, 110%);
+          position: absolute;
+          z-index: 1;
+
+        }
         img {
-          width: 265px;
-          height: 265;
-          border: 5px solid #fff;
+          top: -420%;
+          left: 257%;
+          transform: translate(-50%, 5%);
+          position: absolute;
+          opacity: 0.9;
         }
       }
     }
@@ -168,8 +207,6 @@ body {
       justify-content: space-around;
       // background-color: aqua;
       padding: 40px 50px;
-      margin-left: 4%;
-      margin-right: 4%;
       padding-top: 140px;
       width: 100%;
 
@@ -191,23 +228,25 @@ body {
         position: absolute;
         width: 45%;
         left: 50%;
-        padding: 30px;
+        padding: 40px;
         z-index: 1;
 
         .ready-in-card {
           border: #564f4c 2px solid;
-          width: 200px;
-          height: 200px;
+          width: 33%;
+          height: 33%;
           background-color: #fff;
           background-image: url(../img/Vektor-field.png);
           background-repeat: no-repeat;
           background-size: cover;
-          position: absolute;
+          top: 90%;
+          left: 60%;
+          position: sticky;
           z-index: 1;
-          transform: translate(215%, -500px);
+          transform: translate(200%, -500px);
           display: flex;
           flex-direction: column;
-          justify-content: center;
+          box-shadow: #564f4c67 10px 22px 22px;
           align-items: center;
           .ready-in {
             font-size: 18px;
@@ -240,6 +279,7 @@ body {
           font-weight: 700;
           text-transform: uppercase;
           color: #a47d5e;
+          font-family: sans-serif;
           line-height: 30px;
           padding: 0px 50px 10px 30px;
         }
@@ -357,8 +397,12 @@ body {
     .breakfast-container {
       background-color: #f3f1e9;
       width: 100%;
-      margin-left: 15%;
+      height: 600px;
+
       padding-top: 10%;
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
     }
   }
   #breakfast {
