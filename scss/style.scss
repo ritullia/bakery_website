@@ -75,10 +75,9 @@ body {
 
       img {
         top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-     position: absolute;
-        
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
       }
     }
   }
@@ -89,62 +88,291 @@ body {
     flex-direction: row;
     background-color: antiquewhite;
     height: 760px;
-    padding: 40px;
+    padding: 40px 100px;
     gap: 20px;
-  }
-
-  #art {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: center;
-    background-color: aquamarine;
-    width: 45%;
-    padding: 0 40px 0 40px;
-
-    .art-text {
+    #art {
       display: flex;
       flex-direction: column;
-      line-height: 30px;
+      align-items: flex-start;
+      text-align: center;
+      background-color: aquamarine;
+      width: 50%;
+      padding: 0 80px 0 80px;
+
+      .art-text {
+        display: flex;
+        flex-direction: column;
+        line-height: 30px;
+        h1 {
+          font-size: 48px;
+          font-family: "Alegreya", serif;
+          font-weight: 700;
+          color: #56534c;
+          letter-spacing: 1.2px;
+          padding-bottom: 15px;
+        }
+        .we-create {
+          font-size: 14px;
+          text-transform: uppercase;
+          font-weight: 900;
+          line-height: normal;
+          color: #a47d5e;
+          padding-bottom: 60px;
+        }
+
+        p {
+          font-family: "Open Sans", sans-serif;
+          color: #56534c;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: 1.4px;
+          text-align: center;
+        }
+      }
+    }
+    .cheff-section {
       h1 {
-        font-size: 48px;
-        font-family: "Alegreya", serif;
+        font-size: 24px;
         font-weight: 700;
         color: #56534c;
-        letter-spacing: 1.2px;
-        padding-bottom: 15px;
       }
-      .we-create {
-        font-size: 14px;
-        text-transform: uppercase;
-        font-weight: 900;
-        line-height: normal;
-        color: #a47d5e;
-        padding-bottom: 60px;
-      }
-
-      p {
-        font-family: "Open Sans", sans-serif;
-        color: #56534c;
-        font-size: 14px;
+    }
+    .taste {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      background-color: brown;
+      width: 50%;
+      div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        img {
+          width: 265px;
+          height: 265;
+          border: 5px solid #fff;
+        }
       }
     }
   }
-  .taste {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    background-color: brown;
-    width: 45%;
-    div {
+
+  #tasty-img {
+    background-image: url(../img/Ebene-egg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+    height: 760px;
+
+    .tasty-pancakes {
       display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      img {
-        width: 265px;
-        height: 265;
-        border: 5px solid #fff;
+      justify-content: space-around;
+      // background-color: aqua;
+      padding: 40px 50px;
+      margin-left: 4%;
+      margin-right: 4%;
+      padding-top: 140px;
+      width: 100%;
+
+      .panck-photo-div {
+        background-image: url(../img/Ebene-pancake.png);
+        background-repeat: no-repeat;
+        height: 512px;
+        width: 75%;
+        background-size: 96%;
+        background-position: -355%;
+        position: absolute;
+      }
+
+      .season-div {
+        background-image: url(../img/text_bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 512px;
+        position: absolute;
+        width: 45%;
+        left: 50%;
+        padding: 30px;
+        z-index: 1;
+
+        .ready-in-card {
+          border: #564f4c 2px solid;
+          width: 200px;
+          height: 200px;
+          background-color: #fff;
+          background-image: url(../img/Vektor-field.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: absolute;
+          z-index: 1;
+          transform: translate(215%, -500px);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .ready-in {
+            font-size: 18px;
+            color: #a47d5e;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-weight: 700;
+            padding: 20px;
+          }
+          .fourt {
+            font-size: 92px;
+            color: #dfc691;
+            font-weight: 700;
+            letter-spacing: 10px;
+          }
+        }
+
+        h1 {
+          font-size: 48px;
+          letter-spacing: 1.2px;
+          color: #56534c;
+          font-weight: 700;
+          line-height: 30px;
+          padding: 50px 4px 10px 30px;
+        }
+
+        .season-fav {
+          font-size: 14px;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: #a47d5e;
+          line-height: 30px;
+          padding: 0px 50px 10px 30px;
+        }
+
+        .donec {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24px;
+          font-family: sans-serif;
+          letter-spacing: 1.4px;
+          width: 100%;
+          padding: 70px 4px 70px 30px;
+          color: #56534c;
+        }
+
+        .list {
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          justify-content: center;
+          align-items: center;
+
+          .next {
+            background-image: url(../img/arrow_right.png);
+            border-radius: 50%;
+            color: #564f4c;
+            width: 40px;
+            height: 40px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-origin: content-box;
+          }
+
+          .previous {
+            background-image: url(../img/arrow_left.png);
+            border-radius: 50%;
+            color: #564f4c;
+            width: 40px;
+            height: 40px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-origin: content-box;
+            .previous:hover {
+              color: #a47d5e;
+            }
+          }
+
+          .img-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style-type: none;
+
+            .sandwich {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 90px;
+              height: 90px;
+              border-radius: 50%;
+              // object-fit: contain;
+              object-position: center;
+              background-image: url(../img/ebene-sandwich.png);
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-origin: content-box;
+              background-size: 280%;
+              background-position: 35%;
+            }
+            .berry {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 90px;
+              height: 90px;
+              border-radius: 50%;
+              // object-fit: contain;
+              object-position: center;
+              background-image: url(../img/berry.png);
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-origin: content-box;
+              background-size: 673%;
+              background-position: 54% 90%;
+            }
+            .salats {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 90px;
+              height: 90px;
+              border-radius: 50%;
+              // object-fit: contain;
+              object-position: center;
+              background-image: url(../img/salats.png);
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-origin: content-box;
+              background-size: 500%;
+              background-position: 100% 60%;
+            }
+          }
+        }
       }
     }
+  }
+
+  #breakfast {
+    background-image: url(../img/back-picture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: content-box;
+    height: 760px;
+
+    .breakfast-container {
+      background-color: #f3f1e9;
+      width: 100%;
+      margin-left: 15%;
+      padding-top: 10%;
+    }
+  }
+  #breakfast {
+    background-image: url(../img/back-picture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: content-box;
+    height: 760px;
+  }
+  #jibarito {
+    background-color: #f3f1e9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: content-box;
+    height: 920px;
   }
 }
