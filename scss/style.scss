@@ -3,59 +3,420 @@
 @import "./menu.scss";
 @import "./reservations.scss";
 
-
 body {
-    #container{
-        .navbar-brand{
-            color: #fff;
-            font-family: 'Fasthand', cursive;
-            font-size: 26px;
-            letter-spacing: 8px;
-            padding-left: 30px;
+  #container {
+    .navbar-brand {
+      color: #fff;
+      font-family: "Fasthand", cursive;
+      font-size: 26px;
+      letter-spacing: 8px;
+      padding-left: 30px;
+    }
+
+    #pastry-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 80%;
+      height: 497px;
+      align-items: center;
+      gap: 50px;
+      margin-top: 140px;
+      margin-left: 10%;
+      background: radial-gradient(
+        circle 430px at center,
+        #564f4c -10%,
+        rgba(86, 83, 76, 0) 60%
+      );
+
+      h1 {
+        font-size: 92px;
+        font-weight: 700;
+        color: #fff;
+        font-family: "Alegreya", serif;
+        letter-spacing: 6.9px;
+        text-shadow: 0 0 3px #564f4c;
+      }
+
+      p {
+        font-size: 24px;
+        color: #fff;
+        width: 60%;
+        text-align: center;
+        font-family: "Open Sans", sans-serif;
+        letter-spacing: 2.4px;
+        line-height: 36px;
+      }
+
+      .btn {
+        background-color: #56534c5b;
+        border: rgb(158, 158, 158) 3px dashed;
+        color: #fff;
+        font-size: 24px;
+        letter-spacing: 4.2px;
+        font-family: "Open Sans", sans-serif;
+      }
+    }
+  }
+  #round-bread {
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .smart-object {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: rgb(255, 255, 255);
+      position: relative;
+
+      img {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+      }
+    }
+  }
+
+  #art-tastes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: antiquewhite;
+    height: 760px;
+    padding: 40px 100px;
+    gap: 10px;
+    #art {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: center;
+      // background-color: aquamarine;
+      width: 50%;
+      padding: 0 80px 0 80px;
+
+      .art-text {
+        display: flex;
+        flex-direction: column;
+        line-height: 30px;
+        h1 {
+          font-size: 48px;
+          font-family: "Alegreya", serif;
+          font-weight: 700;
+          color: #56534c;
+          letter-spacing: 1.2px;
+          padding-bottom: 15px;
+        }
+        .we-create {
+          font-size: 14px;
+          text-transform: uppercase;
+          font-weight: 900;
+          line-height: normal;
+          color: #a47d5e;
+          padding-bottom: 60px;
         }
 
-        #pastry-text {
+        p {
+          font-family: "Open Sans", sans-serif;
+          color: #56534c;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: 1.4px;
+          text-align: center;
+        }
+      }
+    }
+    .cheff-section {
+      h1 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #56534c;
+      }
+    }
+    .taste {
+      // background-color: brown;
+      width: 50%;
+      div {
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: repeat(2, 250px);
+        gap: 10px;
+
+        div :nth-child(1) {
+          width: 100%;
+          height: 240px;
+          object-fit: cover;
+          border: 6px solid #fff;
+        }
+        div :nth-child(2) {
+          width: 100%;
+          height: 240px;
+          object-fit: cover;
+        }
+        div :nth-child(3) {
+          width: 100%;
+          height: 240px;
+          object-fit: cover;
+        }
+
+      }
+      .vector-obj {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        
+        h1{
+          font-size: 30px;
+          font-weight: 400;
+          color: #c9b176;
+          text-transform: uppercase;
+          top: -420%;
+          left: 257%;
+          transform: translate(-50%, 110%);
+          position: absolute;
+          z-index: 1;
+
+        }
+        img {
+          top: -420%;
+          left: 257%;
+          transform: translate(-50%, 5%);
+          position: absolute;
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+
+  #tasty-img {
+    background-image: url(../img/Ebene-egg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+    height: 760px;
+
+    .tasty-pancakes {
+      display: flex;
+      justify-content: space-around;
+      // background-color: aqua;
+      padding: 40px 50px;
+      padding-top: 140px;
+      width: 100%;
+
+      .panck-photo-div {
+        background-image: url(../img/Ebene-pancake.png);
+        background-repeat: no-repeat;
+        height: 512px;
+        width: 75%;
+        background-size: 96%;
+        background-position: -355%;
+        position: absolute;
+      }
+
+      .season-div {
+        background-image: url(../img/text_bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 512px;
+        position: absolute;
+        width: 45%;
+        left: 50%;
+        padding: 40px;
+        z-index: 1;
+
+        .ready-in-card {
+          border: #564f4c 2px solid;
+          width: 33%;
+          height: 33%;
+          background-color: #fff;
+          background-image: url(../img/Vektor-field.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          top: 90%;
+          left: 60%;
+          position: sticky;
+          z-index: 1;
+          transform: translate(200%, -500px);
+          display: flex;
+          flex-direction: column;
+          box-shadow: #564f4c67 10px 22px 22px;
+          align-items: center;
+          .ready-in {
+            font-size: 18px;
+            color: #a47d5e;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            width: 80%;
             align-items: center;
-            gap: 50px;
-            margin-top: 140px;
-            margin-left: 10%;
-
-            h1{
-                font-size: 92px;
-                font-weight: 700;
-                color: #fff;
-                font-family: "Alegreya", serif;
-                letter-spacing: 6.9px;
-            }
-
-           
-
-            p{
-                font-size: 24px;
-                color: #fff;
-                width: 40%;
-                text-align: center;
-                font-family: 'Open Sans', sans-serif;
-            }
-
-            .btn{
-                background-color: #56534c5b;
-                border: rgb(104, 104, 104) 2px dashed;
-                color: #fff;
-                font-size: 24px;
-                letter-spacing: 4.2px;
-                font-family: 'Open Sans', sans-serif;
-            }
-
-
+            font-weight: 700;
+            padding: 20px;
+          }
+          .fourt {
+            font-size: 92px;
+            color: #dfc691;
+            font-weight: 700;
+            letter-spacing: 10px;
+          }
         }
 
-    }
-    
+        h1 {
+          font-size: 48px;
+          letter-spacing: 1.2px;
+          color: #56534c;
+          font-weight: 700;
+          line-height: 30px;
+          padding: 50px 4px 10px 30px;
+        }
 
-   
+        .season-fav {
+          font-size: 14px;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: #a47d5e;
+          font-family: sans-serif;
+          line-height: 30px;
+          padding: 0px 50px 10px 30px;
+        }
+
+        .donec {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24px;
+          font-family: sans-serif;
+          letter-spacing: 1.4px;
+          width: 100%;
+          padding: 70px 4px 70px 30px;
+          color: #56534c;
+        }
+
+        .list {
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          justify-content: center;
+          align-items: center;
+
+          .next {
+            background-image: url(../img/arrow_right.png);
+            border-radius: 50%;
+            color: #564f4c;
+            width: 40px;
+            height: 40px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-origin: content-box;
+          }
+
+          .previous {
+            background-image: url(../img/arrow_left.png);
+            border-radius: 50%;
+            color: #564f4c;
+            width: 40px;
+            height: 40px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-origin: content-box;
+            .previous:hover {
+              color: #a47d5e;
+            }
+          }
+
+          .img-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style-type: none;
+
+            .sandwich {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 90px;
+              height: 90px;
+              border-radius: 50%;
+              // object-fit: contain;
+              object-position: center;
+              background-image: url(../img/ebene-sandwich.png);
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-origin: content-box;
+              background-size: 280%;
+              background-position: 35%;
+            }
+            .berry {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 90px;
+              height: 90px;
+              border-radius: 50%;
+              // object-fit: contain;
+              object-position: center;
+              background-image: url(../img/berry.png);
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-origin: content-box;
+              background-size: 673%;
+              background-position: 54% 90%;
+            }
+            .salats {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 90px;
+              height: 90px;
+              border-radius: 50%;
+              // object-fit: contain;
+              object-position: center;
+              background-image: url(../img/salats.png);
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-origin: content-box;
+              background-size: 500%;
+              background-position: 100% 60%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #breakfast {
+    background-image: url(../img/back-picture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: content-box;
+    height: 760px;
+
+    .breakfast-container {
+      background-color: #f3f1e9;
+      width: 100%;
+      height: 600px;
+
+      padding-top: 10%;
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+    }
+  }
+  #breakfast {
+    background-image: url(../img/back-picture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: content-box;
+    height: 760px;
+  }
+  #jibarito {
+    background-color: #f3f1e9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: content-box;
+    height: 920px;
+  }
 }
